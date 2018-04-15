@@ -1,11 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
 import { Button } from 'primereact/components/button/Button'
 import { Slider } from 'primereact/components/slider/Slider'
+import React from 'react'
+import styled from 'styled-components'
 
-import '../styles'
 import 'primereact/components/button/Button.css'
 import 'primereact/components/slider/Slider.css'
+import '../styles'
 
 const H1 = styled.h1`
   font-family: 'Helvetica Neue';
