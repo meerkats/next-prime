@@ -1,6 +1,8 @@
 {
   "extends": ["tslint:latest", "tslint-config-prettier"],
   "rules": {
+    "curly": false,
+    "no-console": false,
     "no-submodule-imports": false
   }
 }

@@ -1,6 +1,6 @@
 import compression from 'compression'
-import minify from 'express-minify'
 import * as express from 'express'
+import minify from 'express-minify'
 import * as next from 'next'
 
 const port = parseInt(process.env.PORT, 10) || 3000

@@ -1,10 +1,10 @@
 import { Button } from 'primereact/components/button/Button'
+import 'primereact/components/button/Button.css'
 import { Slider } from 'primereact/components/slider/Slider'
+import 'primereact/components/slider/Slider.css'
 import React from 'react'
 import styled from 'styled-components'
 
-import 'primereact/components/button/Button.css'
-import 'primereact/components/slider/Slider.css'
 import '../styles'
 
 const H1 = styled.h1`

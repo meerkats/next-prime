@@ -38,12 +38,13 @@
   "scripts": {
     "dev": "ts-node --project tsconfig.server.json server/index.ts",
     "dev-server": "nodemon server/index.ts",
+    "prebuild": "npm run lint",
     "build": "next build && tsc --project tsconfig.server.json",
     "start": "NODE_ENV=production node production-server/index.js",
     "analyze": "BUNDLE_ANALYZE=both npm run build",
     "analyze:server": "BUNDLE_ANALYZE=server npm run build",
     "analyze:browser": "BUNDLE_ANALYZE=browser npm run build",
-    "lint": "tslint"
+    "lint": "tslint --project 'tsconfig.json'"
   },
   "keywords": [],
   "author": "",
