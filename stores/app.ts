@@ -1,9 +1,14 @@
-import { observable } from 'mobx'
+import { action, observable } from 'mobx'
 
 class App {
   @observable public someFlag = false
+
+  @action
+  public toggleFlag() {
+    this.someFlag = !this.someFlag
+  }
 }
 
-const AppStore = new App()
+// const AppStore = new App()
 
-export { AppStore }
+export { App }
