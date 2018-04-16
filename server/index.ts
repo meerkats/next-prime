@@ -4,7 +4,6 @@ import * as minify from 'express-minify'
 import * as mobxReact from 'mobx-react'
 import * as next from 'next'
 import { join } from 'path'
-// const minify = require('express-minify')
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
