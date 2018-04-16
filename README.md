@@ -8,20 +8,24 @@
 * [x] CSS
 * [x] SASS
 * [x] Styled Components
-* [x] External CSS minification and GZip
+* [x] External CSS optimization
+  * [x] Minification
+  * [x] GZip compression
 * [x] TypeScript (Server and App)
 * [x] TSLint
 * [x] BundleAnalyzer (Server and Client)
 * [x] MobX
 * [ ] MobX State Tree
-* [ ] Google Workbox
+* [ ] Static export
+* [x] Google Workbox
 * [ ] Viewport definition
 * [ ] Responsive styling
 * [ ] Web App manifest
 * [ ] _Add to Home screen_ metadata
 * [ ] Push notifications
-* [ ] Payment request API
 * [ ] React Spring
+* [ ] Test harness
+* [ ] Continuous integration
 
 ## Strategies
 
