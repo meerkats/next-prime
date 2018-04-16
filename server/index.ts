@@ -1,12 +1,15 @@
 import compression from 'compression'
 import * as express from 'express'
 import minify from 'express-minify'
+import * as mobxReact from 'mobx-react'
 import * as next from 'next'
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
+
+mobxReact.useStaticRendering(true)
 
 app.prepare().then(() => {
   const server = express()
@@ -15,17 +18,17 @@ app.prepare().then(() => {
     server.use(minify())
   }
 
-  server.get('/a', (req, res) => {
-    return app.render(req, res, '/b', req.query)
-  })
+  // server.get('/a', (req, res) => {
+  //   return app.render(req, res, '/b', req.query)
+  // })
 
-  server.get('/b', (req, res) => {
-    return app.render(req, res, '/a', req.query)
-  })
+  // server.get('/b', (req, res) => {
+  //   return app.render(req, res, '/a', req.query)
+  // })
 
-  server.get('/posts/:id', (req, res) => {
-    return app.render(req, res, '/posts', { id: req.params.id })
-  })
+  // server.get('/posts/:id', (req, res) => {
+  //   return app.render(req, res, '/posts', { id: req.params.id })
+  // })
 
   server.get('*', (req, res) => {
     return handle(req, res)
