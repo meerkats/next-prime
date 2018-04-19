@@ -46,13 +46,15 @@
 		"dev-server": "nodemon server/index.ts",
 		"prebuild": "npm run lint",
 		"build": "next build && tsc --project tsconfig.server.json",
+		"preexport": "npm run build",
+		"export": "next export",
 		"start": "NODE_ENV=production node production-server/index.js",
 		"analyze": "BUNDLE_ANALYZE=both npm run build",
 		"analyze:server": "BUNDLE_ANALYZE=server npm run build",
 		"analyze:browser": "BUNDLE_ANALYZE=browser npm run build",
 		"lint": "tslint --project .",
 		"pretest": "npm run lint",
-		"test": "jest --watch"
+		"test": "jest"
 	},
 	"keywords": [],
 	"author": "",
