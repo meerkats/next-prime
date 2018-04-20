@@ -1,17 +1,17 @@
-import { Button } from 'primereact/components/button/Button'
-import 'primereact/components/button/Button.css'
-import { Slider } from 'primereact/components/slider/Slider'
-import 'primereact/components/slider/Slider.css'
-import React, { Fragment } from 'react'
-import styled from 'styled-components'
-import { IPageState, Page } from '../components/layout/Page'
-import { Toggle } from '../components/Toggle'
+import { Button } from "primereact/components/button/Button";
+import "primereact/components/button/Button.css";
+import { Slider } from "primereact/components/slider/Slider";
+import "primereact/components/slider/Slider.css";
+import React, { Fragment } from "react";
+import styled from "styled-components";
+import { IPageState, Page } from "../components/layout/Page";
+import { Toggle } from "../components/Toggle";
 
-import '../styles'
+import "../styles";
 
 const H1 = styled.h1`
-  font-family: 'Helvetica Neue';
-`
+  font-family: "Helvetica Neue";
+`;
 
 export default () => (
   <Page>
@@ -29,4 +29,4 @@ export default () => (
       </Fragment>
     )}
   </Page>
-)
+);
