@@ -1,7 +1,8 @@
 module.exports = function() {
-	const pathConfig = {
-		'/': { page: '/' },
-	}
+  const pathConfig = {
+    "/": { page: "/" },
+    "/test": { page: "/test" }
+  }
 
-	return pathConfig
+  return pathConfig
 }
